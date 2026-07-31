@@ -46,7 +46,7 @@ return (
     </h2>
     <input type="number" step="0.001" min="0" placeholder="0.01" value={amount} onChange={(e)=> setAmount(e.target.value)} className="mb-4 w-full rounded border p-2" />
     <button onClick={handleDeposit} disabled={loading} className="w-full rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 disabled:bg-gray-400">
-        {loading ? "Depositin...":"Deposit"}
+        {loading ? "Depositing...":"Deposit"}
     </button>
     { status && (
  <p className="mt-4 text-sm text-gray-700">{status} </p>

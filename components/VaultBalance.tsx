@@ -16,7 +16,7 @@ export default function VaultBalance(){
             console.log("Network:", await provider.getNetwork());
             const code = await provider.getCode(contract.target);
             console.log("Code:", code);
-            const vaultBalance = await contract.ContractBalance();
+            const vaultBalance = await contract.contractBalance();
             console.log("Vault balance:", vaultBalance.toString());
             setBalance(ethers.formatEther(vaultBalance));
         } catch (err){
