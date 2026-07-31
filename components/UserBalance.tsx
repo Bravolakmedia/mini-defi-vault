@@ -13,7 +13,7 @@ export default function UserBalance(){
    const loadUserBalance = async ()=> {
     try{
         const provider = await getProvider();
-        const accounts = await provider.send("eth_accounts", []);
+        const accounts = await provider.send("eth_accounts.length", []);
         if(accounts.length === 0){
             setLoading(false);
             return;
