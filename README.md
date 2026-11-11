@@ -1,6 +1,6 @@
 
 ```markdown
-# Contributing to BSV Health-Chain Frontend
+# Contributing to Mini-Defi-Vault
 
 Thank you for contributing to our mini defi vault! This guide helps ensure smooth collaboration.
 
@@ -38,7 +38,6 @@ npm run dev
 npm run dev         # Start dev server
 npm run build       # Build for production
 npm test            # Run tests
-npm run lint        # Check code style
 ```
 
 ---
@@ -140,7 +139,6 @@ git rebase origin/develop
 
 
 ```shellscript
-npm run lint
 npm test
 npm run build
 ```
